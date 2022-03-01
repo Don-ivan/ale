@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Muyonjo Ivan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IVANS</title>
+<style type="text/css">
+body
+{
+background: linear-gradient(blue,white,blue,white);
+}
+h1
+{
+ color:yellow;
+ font-size:15px;
+ padding:5%;
+ text-shadow: 2px 2px red;
+ font-family:san-serif;
+}
+p
+{
+ color:magenta;
+ font-family:fantasy;
+}
+button
+{
+width:90px;
+height:50px;
+margin-left:120px;
+margin-top:50px;
+background:yellow;
+border-radius:20px;
+transition-property: background;
+}
+button:hover
+{
+background:red;
+}
+
+
+#plan
+{
+width:200px;
+ height:200px;
+ border:solid 1px indigo;
+ margin-left:90px;
+ transform: rotate(40deg);
+ margin-top: 80px;
+ background:red;
+ box-shadow:0 0 5px white, 0 0 30px yellow, 0 0 100px red;
+}
+.success
+{
+
+width:200px;
+ height:200px;
+ border:solid 1px blue;
+ transform: rotate(100deg);
+ margin:0%;
+ background:orange;
+ transform:rotateY(180deg)
+}
+
+.star
+{
+ width:200px;
+ height:200px;
+ border:solid 1px green;
+ margin-left:70px;
+ transform: rotate(104deg);
+ margin: 0%;
+ background:yellow;
+ transform:rotateX(180deg)
+}
+.pending
+{
+width:200px;
+height:200px;
+border:solid 1px yellow;
+margin-left:70px;
+transform: rotate(105deg);
+margin: 0%;
+background:green;
+transform:rotateY(180deg)
+}
+
+.loading
+{
+width:200px;
+height:200px;
+border:solid 1px orange;
+margin-left:70px;
+transform: rotate(106deg);
+margin: 0%;
+background:blue;
+transform: rotateX(180deg)
+
+}
+.connecting
+{
+width:200px;
+height:200px;
+border:solid 1px red ;
+margin-left:70px;
+transform: rotate(107deg);
+margin: 0%;
+background:indigo;
+transform: rotateY(180deg)
+}
+pre
+{
+color:yellow;
+font-size:25px;
+font-weight:900;
+font-family: fantasy;
+text-shadow:2px 3px red;
+
+}
+
+div
+{
+transition: 5s;
+border-radius:20%;
+
+}
+#plan:hover
+{
+transform: rotate(180deg);
+
+}
+.connecting:hover
+{
+transform: rotate(-180deg);
+
+}
+.loading:hover
+{
+transform: rotate(180deg);
+
+}
+.pending:hover
+{
+transform: rotate(-180deg);
+
+}
+.star:hover
+{
+transform: rotate(180deg);
+
+}
+.success:hover
+{
+transform: rotate(-180deg);
+
+}
+h2
+{
+ color:yellow;
+ font-size:15px;
+ padding:5%;
+ text-shadow: 2px 2px red;
+ font-family:san-serif;
+}
+.description pre
+{
+ color:yellow;
+ font-family:fantasy;
+ font-weight:900;
+ font-size:15px;
+ text-shadow:0px 0px;
+}
+p
+{
+color:orange;
+}
+#about pre
+{
+color:green;
+font-family:san-serif;
+font-weight:800;
+font-size:13px;
+text-shadow:0px 0px;
+}
+.link
+{
+width:300px;
+height:50px;
+border:3px solid red;
+padding:5%;
+}
+button
+{
+   width:100px;
+   height:30px;
+   boder: 2px dashed magenta;
+   background:yellow;
+}
+</style>
+</head>
+<body>
+ <marquee behaviour="alternate"><h1>WELCOME TO MY MUYONJOTECH</h1></marquee>
+ <p>Thank you for visiting my website.
+ Congrats to all who have managed to reach into this new year(2022), it has really been a struggle.</p>
+ 
+ 
+<p> This website is going to contain so much content mostly web designing for beginners and tutorials.</p>
+<p>So if you are interested in coding, click the next button and we get started</p>
+
+<p>Below are some of my html+css animations  </p>
+<p>Just Tap on It</p>
+<div id="plan">
+ <div class="success">
+ <div class="star">
+ <div class="pending">
+ <div class="loading">
+ <div class="connecting">
+ <pre>
+ 
+  WELCOME
+      TO 
+   MUYONJO
+    TECH
+       
+          
+ </pre>
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <span class="anime"></span>
+ <h2>THIS IS A SIMPLE TUTORIAL FOR BEGINNERS</h1>
+ <div class="description">
+ <pre>
+ Most of the websites contain html, css, javascript and php.
+ But for now, we are going to learn html and css.
+ For those with android you can install apps like anwriter, acode etc to start coding
+ We'll begin now with a simple video,
+ just visit this link below.
+ </pre>
+ </div>
+ <marquee direction="right"><div class="link">
+ <p>
+ <iframe width="560" height="315"
+ src="https://youtu.be/bWPMSSsVdPk" frameborder="0"></iframe>
+ 
+ </p>
+ </div></marquee>
+ <button type="button" onclick="show()">Show</button>
+ <button type="button" onclick="hide()">hide</button>
+ <div id="about">
+ <pre>
+  Thanks so much for viewing my site.
+  About me.
+  AM MUYONJO IVAN
+  Email:greyjane1234567890@gmail.com
+  Contacts: +256784536021, +256704869833
+  Facebook: Don Ivan
+ </pre>
+ </div>
+ <script type="text/javascript">
+ function show() {
+ document.getElementById("plan").style.display ="block";
+ 
+ }
+ function hide() {
+ document.getElementById("plan").style.display ="none";
+ 
+ }
+ 
+ </script>
+</body>
+</html>
